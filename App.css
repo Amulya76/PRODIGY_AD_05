@@ -1,0 +1,52 @@
+/* General app styling */
+.app {
+  text-align: center;
+  margin-top: 50px;
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f0f0; /* Light gray background */
+  color: #333; /* Dark gray text */
+}
+
+/* Header styling */
+.app-header {
+  background-color: #1976d2; /* Dark blue */
+  height: 100px; /* Increased height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 36px; /* Larger font size */
+  color: #fff; /* White text */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow for depth */
+  border-bottom: 4px solid #0f4c75; /* Darker blue border */
+}
+
+/* QR scanner container */
+.qr-scanner {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* QR scanner styles */
+.qr-scanner .react-qr-reader-container {
+  width: 100%;
+}
+
+.qr-scanner p {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Responsive styling for smaller screens */
+@media (max-width: 600px) {
+  .qr-scanner {
+    margin-top: 20px;
+  }
+  
+  .app-header {
+    font-size: 24px;
+  }
+}
